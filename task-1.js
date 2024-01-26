@@ -10,12 +10,12 @@ containerSize — число, максимальна кількість один
 */
 
 function isEnoughCapacity(products, containerSize) {
-  const keys = Object.keys(products)
-  const values = Object.values(products)
+    const values = Object.values(products)
+    let totalWeigth = 0;
   for (const value of values) {
-    
+    totalWeigth += value;
   }
-  return ;
+  return totalWeigth <= containerSize;
 }
 
 console.log(
